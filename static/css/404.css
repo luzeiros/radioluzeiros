@@ -1,0 +1,14 @@
+/**
+ *
+ * Based on a pen by Stéphane Deluce
+ * https://codepen.io/Stephane/pen/Jdozrp
+ *
+ */
+
+body {
+  background: #ececec;
+}
+#error {
+  margin: 0 auto;
+  display: block;
+}
