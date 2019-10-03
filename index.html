@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Radio Luzeiros</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/wave.css">
+</head>
+<body>
+
+  <div class='music-card'>
+
+      <div class='image'></div>
+
+      <div class='wave'></div>
+      <div class='wave'></div>
+      <div class='wave'></div>
+
+      <div class="info" id="radio">
+          <h2 class='title'>{{ song.title }}</h2>
+          <h3 class='artist'>{{ song.artist }}</h3>
+      </div>
+
+      <i class="fa fa-stop trigger" aria-hidden="true"></i>
+      <i class="fa fa-play trigger" aria-hidden="true"></i>
+  </div>
+
+  <script src="/static/js/player.js"></script>
+
+</body>
+</html>
