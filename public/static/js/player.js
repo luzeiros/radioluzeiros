@@ -35,7 +35,7 @@ var app = new Vue({
 });
 
   
-const url = 'http://repaus.com:8010/radio.mp3';
+const url = `${station_url}/radio/8010/radio.mp3`;
 var audio = new Audio(url);
 
 $('.trigger').click(function() {
