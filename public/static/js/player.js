@@ -30,7 +30,7 @@ var app = new Vue({
               this.song = data.now_playing.song;
             });
         })
-    }, 5000);
+    }, 30000);
   }
 });
 
