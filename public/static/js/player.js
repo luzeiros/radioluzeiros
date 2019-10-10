@@ -23,8 +23,15 @@ var app = new Vue({
     }
   },
   mounted() {
+    fetch(this.url)
+      .then(res => {
+        res.json().then((data) => {
+          this.song = data.now_playing.song;
+        })
+      })
+
     this.interval = setInterval(() => {
-      fetch(this.url, /*{ mode: 'no-cors' }*/)
+      fetch(this.url)
         .then(res => {
             res.json().then((data) => {
               this.song = data.now_playing.song;
