@@ -1,7 +1,7 @@
 {
   "headers": {
     "/": {
-      "Cache-Control": "public, max-age=21600, no-cache"
+      "Cache-Control": "public, max-age=604800, no-cache"
     }
   },
   "https_only": true,
