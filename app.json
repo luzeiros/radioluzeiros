@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dokku": {
-      "postdeploy": "curl -X POST -H 'Content-type: application/json' --data '{\"text\": \"Successfully deployed Radio Luzeiros\"}' https://hooks.slack.com/services/$SLACK_TOKEN"
+      "postdeploy": "./notify.sh"
     }
   }
 }
